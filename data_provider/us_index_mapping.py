@@ -14,7 +14,7 @@
 import re
 
 # 美股代码正则：1-5 个大写字母，可选 .X 后缀（如 BRK.B）
-_US_STOCK_PATTERN = re.compile(r'^[A-Z]{1,5}(\.[A-Z])?$')
+_US_STOCK_PATTERN = re.compile(r'^[A-Z]{1,5}(\.[A-Z]+)?$')
 
 
 # 用户输入 -> (Yahoo Finance 符号, 中文名称)
